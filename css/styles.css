@@ -71,19 +71,21 @@ header h1 {
   right: 0;
   top: 150px;
   overflow: hidden;
-  width: 300px;
+  width: 200px;
   transform: rotate(-15deg);
+  filter: drop-shadow(10px 40px 30px rgba(0,0,0,0.2));
 }
 
 
-.hand {
+.plane {
   height: 500px;
   position: absolute;
   bottom: 0;
   right: 300px;
   z-index: 0;
-  animation: hand 3s infinite;
+  animation: plane 3s infinite;
   transform: translateY(50px);
+  filter: drop-shadow(10px 50px 30px rgba(0,0,0,0.4));
 }
 
 .plant-background {
@@ -116,9 +118,9 @@ header h1 {
   }
 }
 
-@keyframes hand {
+@keyframes plane {
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
   }
 }
 
