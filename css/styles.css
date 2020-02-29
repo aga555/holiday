@@ -65,7 +65,16 @@ header h1 {
   font-weight: 900;
   position: relative;
 }
+p.intro:first-letter{
+  float: left;
+  text-transform: uppercase;
+  font-family: 'Karla',sans-serif;
+  font-size: 100px;
+  color: #f3b70f;
+  line-height: 0.5;
+  margin: 15px 20px 10px 0;
 
+}
 .plant {
   position: absolute;
   right: 0;
@@ -149,9 +158,7 @@ header h1 {
 
 p.shortened {}
 
-/*first-letter*/
 
-p.intro:first-letter {}
 
 /*multiple backgrounds + viewport height*/
 
@@ -165,7 +172,6 @@ header {
   align-items: center;
   flex-direction: column;
   background-attachment: fixed;
-  position: relative;
   background-color: #f3b70f;
   background-image: url('../img/pool.jpg'), url('../img/vacation.jpg');
   background-repeat: no-repeat;
