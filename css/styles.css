@@ -102,9 +102,27 @@ p.intro:first-letter {
   bottom: 0;
   right: 300px;
   z-index: 0;
-  animation: plane 3s infinite;
+  animation: plane 15s infinite;
   transform: translateY(50px);
   filter: drop-shadow(10px 50px 30px rgba(0, 0, 0, 0.4));
+}
+.cloud {
+  position: absolute;
+  top : 50px;
+  right: 50px;
+  z-index: 0;
+  bottom:15%;
+  -webkit-animation:linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 15s;
+  transform: translateY(50px);
+  filter: drop-shadow(10px 50px 30px rgba(0, 0, 0, 0.4));
+}
+
+@-webkit-keyframes run {
+  0% { left: 0;}
+  50%{ left : 100%;}
+  100%{ left: 0;}
 }
 
 .plant-background {
@@ -141,6 +159,11 @@ p.intro:first-letter {
 @keyframes plane {
   50% {
     transform: translateY(-40px);
+  }
+}
+@keyframes cloud {
+  50% {
+    transform: translateZ(-40px);
   }
 }
 
@@ -194,7 +217,7 @@ header {
   flex-direction: column;
   background-attachment: fixed;
   background-color: #f3b70f;
-  background-image: url('../img/pool.jpg'), url('../img/vacation.jpg');
+  background-image: url('../img/books-918521.jpg'), url('../img/vacation.jpg');
   background-repeat: no-repeat;
   background-size: 430px, 470px;
   background-position: left top, right;
@@ -220,7 +243,20 @@ ul {
 .contact {
   text-align: center;
   margin: 50px 0;
+  background-color: #b3d4fc;
+  background-image: url("../img/travel.jpg"), url("../img/bananaPalm.png");
+  background-repeat: no-repeat;
+  background-size: 430px,430px, 470px;
+  background-position: left , right;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+
 }
+
 
 /*text stroke and gradient background text + max width in characters*/
 
@@ -351,9 +387,9 @@ ol.numbered-list > li:before {
   content: "";
   position: absolute;
   left: 0;
-  top:22px;
+  top: 22px;
   height: 45px;
-  width:45px;
+  width: 45px;
   border-radius: 50%;
   background: lightpink;
   content: url("../img/banana-icon.png");
@@ -378,9 +414,9 @@ ol.numbered-list > li:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: conic-gradient( #a6c3d1 0% 22.5%, #ff832e 22.5% 42.3%, #ffb50e 42.3% 54.81%,salmon 54.81% 100%);
+  background: conic-gradient(#a6c3d1 0% 22.5%, #ff832e 22.5% 42.3%, #ffb50e 42.3% 54.81%, salmon 54.81% 100%);
   border-radius: 50%;
-  filter:drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.2));
 }
 
 .piechart h2 {
@@ -395,9 +431,11 @@ ol.numbered-list > li:before {
   flex-direction: column;
   align-items: flex-start;
 }
-.chart-legend ~ p{
+
+.chart-legend ~ p {
   line-height: 200%;
 }
+
 /*sibling combinator*/
 
 .chart-legend + p {
@@ -406,7 +444,7 @@ ol.numbered-list > li:before {
 
 }
 
-span.dist2, span.ditst3, span.dist1,span.dist4 {
+span.dist2, span.ditst3, span.dist1, span.dist4 {
   padding: 5px;
   margin-right: 7px;
   display: inline-block;
@@ -424,11 +462,13 @@ span.dist2 {
 }
 
 span.dist1 {
-   background: #a6c3d1;
- }
+  background: #a6c3d1;
+}
+
 span.dist4 {
   background: salmon;
 }
+
 .chart-part {
   margin-top: 80px;
 }
