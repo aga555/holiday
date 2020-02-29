@@ -156,7 +156,14 @@ p.intro:first-letter{
 
 /*shortening paragraph using line-clamp property*/
 
-p.shortened {}
+p.shortened {
+  display: -webkit-box;
+  -webkit-line-break: normal;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+
+}
 
 
 
