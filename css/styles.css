@@ -289,6 +289,7 @@ ol.numbered-list li {
   font-family: 'Darker Grotesque', sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
+
 }
 
 ol.numbered-list li:last-child {
@@ -297,7 +298,24 @@ ol.numbered-list li:last-child {
 
 /*styling numbers in the numbered list*/
 
-ol.numbered-list>li:before {}
+ol.numbered-list>li:before {
+  content: counter(li);
+  border-radius: 50%;
+  background: deepskyblue;
+  width: 45px;
+  height: 45px;
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  font-family: 'Karla', sans-serif;
+  position: absolute;
+  top: 2px;
+  left: -35px;
+
+}
 
 .list {
   margin-bottom: 20px;
