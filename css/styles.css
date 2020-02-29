@@ -65,16 +65,18 @@ header h1 {
   font-weight: 900;
   position: relative;
 }
-p.intro:first-letter{
+
+p.intro:first-letter {
   float: left;
   text-transform: uppercase;
-  font-family: 'Karla',sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 100px;
   color: #f3b70f;
   line-height: 0.5;
   margin: 15px 20px 10px 0;
 
 }
+
 .plant {
   position: absolute;
   right: 0;
@@ -82,7 +84,7 @@ p.intro:first-letter{
   overflow: hidden;
   width: 200px;
   transform: rotate(-15deg);
-  filter: drop-shadow(10px 40px 30px rgba(0,0,0,0.2));
+  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.2));
 }
 
 
@@ -94,7 +96,7 @@ p.intro:first-letter{
   z-index: 0;
   animation: plane 3s infinite;
   transform: translateY(50px);
-  filter: drop-shadow(10px 50px 30px rgba(0,0,0,0.4));
+  filter: drop-shadow(10px 50px 30px rgba(0, 0, 0, 0.4));
 }
 
 .plant-background {
@@ -103,7 +105,7 @@ p.intro:first-letter{
   left: -80px;
   width: 500px;
   top: 260px;
-  filter:blur(2px);
+  filter: blur(2px);
 }
 
 .plant-background.bottom {
@@ -140,6 +142,11 @@ p.intro:first-letter{
   }
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /*truncate text with ellipsis*/
 
@@ -166,11 +173,10 @@ p.shortened {
 }
 
 
-
 /*multiple backgrounds + viewport height*/
 
 header {
-  height:80vh;
+  height: 80vh;
   text-align: center;
   position: relative;
   margin-bottom: 50px;
@@ -182,8 +188,8 @@ header {
   background-color: #f3b70f;
   background-image: url('../img/pool.jpg'), url('../img/vacation.jpg');
   background-repeat: no-repeat;
-  background-size: 430px,470px;
-  background-position: left top,right;
+  background-size: 430px, 470px;
+  background-position: left top, right;
 }
 
 header span {
@@ -298,7 +304,7 @@ ol.numbered-list li:last-child {
 
 /*styling numbers in the numbered list*/
 
-ol.numbered-list>li:before {
+ol.numbered-list > li:before {
   content: counter(li);
   border-radius: 50%;
   background: deepskyblue;
@@ -329,11 +335,13 @@ ol.numbered-list>li:before {
 
 /*custom bullet points*/
 
-.list li::before {}
+.list li::before {
+}
 
 /*object fit class for the images*/
 
-.object-fit {}
+.object-fit {
+}
 
 /*piechart graph*/
 
@@ -393,7 +401,8 @@ span.dist1 {
 
 /*column count*/
 
-.outro {}
+.outro {
+}
 
 /*calc, vh and writing mode*/
 
