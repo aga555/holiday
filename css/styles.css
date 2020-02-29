@@ -42,6 +42,7 @@ p {
 nav {
   z-index: 1;
   top: 0;
+  position: fixed;
 }
 
 nav ul {
@@ -55,6 +56,7 @@ nav li {
   color: black;
   margin: 25px 12.5px 25px 12.5px;
   display: inline-block;
+
 }
 
 nav li a {
@@ -502,6 +504,8 @@ span.dist4 {
   align-self: flex-end;
   margin: 0.9375rem;
   position: fixed ;
+  z-index: 2;
+  right: 0;
 }
 
 .inner-switch {
