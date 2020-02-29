@@ -432,6 +432,7 @@ span.dist4 {
 /*column count*/
 
 .outro {
+  column-count: 2;
 }
 
 /*calc, vh and writing mode*/
