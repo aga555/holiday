@@ -362,6 +362,9 @@ ol.numbered-list > li:before {
 /*object fit class for the images*/
 
 .object-fit {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*piechart graph*/
