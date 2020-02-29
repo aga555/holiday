@@ -89,11 +89,12 @@ header h1 {
 }
 
 .plant-background {
-  transform: rotate(-240deg);
+  transform: rotate(-180deg);
   position: absolute;
   left: -80px;
   width: 500px;
   top: 260px;
+  filter:blur(2px);
 }
 
 .plant-background.bottom {
