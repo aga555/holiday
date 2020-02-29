@@ -51,17 +51,17 @@ nav ul {
 }
 
 nav li {
-  font-size: 16px;
+  font-size: 24px;
   color: black;
   margin: 25px 12.5px 25px 12.5px;
   display: inline-block;
 }
 
 nav li a {
-  color: #fff;
+  color: #555555;
   background: none;
   font-family: 'Darker Grotesque', sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -501,6 +501,7 @@ span.dist4 {
 .switch {
   align-self: flex-end;
   margin: 0.9375rem;
+  position: fixed ;
 }
 
 .inner-switch {
