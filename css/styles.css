@@ -25,7 +25,7 @@ h2 {
 }
 
 a {
-  color: #000;
+  color: white;
   font-size: 14px;
   text-decoration: underline;
   text-transform: uppercase;
@@ -33,6 +33,7 @@ a {
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
+  stroke: black;
 }
 
 p {
@@ -60,12 +61,13 @@ nav li {
 }
 
 nav li a {
-  color: #555555;
+  color: white;
   background: none;
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
+  stroke: black;
 }
 
 header h1 {
@@ -526,3 +528,25 @@ span.dist4 {
   border-color: #e6e6e6;
 }
 
+.tel-number{
+  font-weight: bold;
+}
+
+.intro li::before {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: orange;
+  content: url("../img/icon-Phone.png");
+
+
+
+}
+.intro li {
+  list-style: none;
+  position: relative;
+  padding: 30px 0 0 55px;
+}
